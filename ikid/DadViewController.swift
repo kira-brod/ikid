@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DadViewController.swift
 //  ikid
 //
 //  Created by Kira Brodsky on 4/25/25.
@@ -7,10 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DadViewController: UIViewController {
 
-    var first : PunViewController!
-    var second : Pun2ViewController!
+    var first : Dad2ViewController!
+    var second : Dad3ViewController!
     
     @IBAction func switchViews(_ sender: UIButton) {
         UIView.animate(withDuration: 0.4, animations: { [self] in
@@ -66,8 +66,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        first = instantiate(id: "pun")
-        second = instantiate(id: "pun2")
+        first = instantiate(id: "dad")
+        second = instantiate(id: "dad2")
         switchViewController(nil, to: first)
 
         // Do any additional setup after loading the view.
@@ -84,7 +84,16 @@ class ViewController: UIViewController {
     }
     */
 
+    
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
-

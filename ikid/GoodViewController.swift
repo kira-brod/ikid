@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GoodViewController.swift
 //  ikid
 //
 //  Created by Kira Brodsky on 4/25/25.
@@ -7,10 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    var first : PunViewController!
-    var second : Pun2ViewController!
+class GoodViewController: UIViewController {
+    
+    var first : Good2ViewController!
+    var second : Good3ViewController!
     
     @IBAction func switchViews(_ sender: UIButton) {
         UIView.animate(withDuration: 0.4, animations: { [self] in
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     
     
 //    @IBAction func switchViews(_ sender: UIBarButtonItem) {
-//
+//        
 //    }
     // {{## END switch-with-animation ##}}
     
@@ -66,8 +66,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        first = instantiate(id: "pun")
-        second = instantiate(id: "pun2")
+        first = instantiate(id: "good2")
+        second = instantiate(id: "good3")
         switchViewController(nil, to: first)
 
         // Do any additional setup after loading the view.
@@ -84,7 +84,4 @@ class ViewController: UIViewController {
     }
     */
 
-
-
 }
-
